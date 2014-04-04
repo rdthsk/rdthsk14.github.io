@@ -1,31 +1,37 @@
 #nav {
-	margin-left: 400px;
 	font-family: 'Lemon';
+	text-align: center;
 }
 
 ul {
 	list-style-type: none;
 	font-size: 40px;
 	display: inline;
+
 }
+
+#navbar ul li a:hover { 
+color: #330066; 
+background-color: #fff; 
+} 
 
 #my-name {
 	
-	padding-left: 30px
+
 
 }
 
 #about_link {
 	
-	margin-left: 800px;
-	margin-bottom: 80px;
+
 }
 
 
 
 p {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Lemon', cursive;
+	text-align: center;
 
 }
 
