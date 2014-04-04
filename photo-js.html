@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Photo Gallery</title>
+	<link href="photo.css" rel="stylesheet" >
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(document).ready(
+			function () {
+				$("#gallery li img").hover(function(){
+					$("#main-img").attr('src',$(this).attr('src').replace('thumb/',''));
+				})
+			})
+	</script>
+</head>
+<body>
+	<div class+"container">
+		<h1 class="title"> jQuery Photo Gallery</h1>
+		<div id="gallery">
+			<img src="images/img_1.jpg" id="main-img"/>
+			<ul>
+				<li><img src="img/thumb/img1.jpg"></li>
+				<li><img src="img/thumb/img2.jpg"></li>
+				<li><img src="img/thumb/img3.jpg"></li>
+				<li><img src="img/thumb/img4.jpg"></li>
+				<li><img src="img/thumb/img5.jpg"></li>
+				<li><img src="img/thumb/img6.jpg"></li>
+			</ul>
+		</div>
+	</div>		
+</body>
+</html>
